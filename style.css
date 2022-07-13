@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+html {
+    background-color: lightslategrey;
+}
+
+header h1 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 4rem;
+    padding: 10px;
+}
+.clicked {
+    background-color: rgb(4, 14, 17);
+}
+
+.top {
+    /* background-color: silver; */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 2rem;
+}
+button, .top input {
+    width: 100px;
+    font-size: 1.8rem;
+    height: auto;
+    padding: 10px;
+    transition: 0.2s;
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background-color: lightslategray;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+button:hover, .top input:hover {
+    transform: scale(1.1,1.1);
+}
+
+
+footer {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    bottom: 5px;
+    margin: auto;
+}
+
+/* Grid Stuff */
+.grid {
+    display: flex;
+}
+.grid-container {
+    border: 1px solid black;
+    display: inline-grid;
+    margin: auto;
+    padding: 20px;
+    grid-template-rows: repeat(var(--grid-rows),1fr);
+    grid-template-columns: repeat(var(--grid-cols),1fr);
+}
+.grid-cell {
+    width: 15px;
+    height: 15px;
+    border: 1px solid lightgray;
+    background-color: #FFFFFF;
+    user-select: none;
+}
+
+.grid-cell:hover {
+ background-color: black;
+ opacity: 0.5;
+ cursor:crosshair;
+
+}
