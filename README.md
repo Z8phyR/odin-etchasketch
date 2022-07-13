@@ -11,4 +11,4 @@ Utilizes dynamic loading of divs with the ability to color in squares - includes
 
 *Enjoy*
 
-[Visit the Site](https://github.com/z8phyr/odin-etchasketch)
+[Visit the Site](https://z8phyr.github.io/odin-etchasketch/)
